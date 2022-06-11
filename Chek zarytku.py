@@ -13,6 +13,10 @@ clear()
 a = psutil.sensors_battery()
 b = int(a.percent)
 
-percent = int(a.percent)
-print(f"Заряд батареи: {percent}%")
+while True:
+    percent = int(a.percent)
+    print(f"Заряд батареи: {percent}%")
+    for i in range(1,10):
+        print(i,'seconds')
+        sleep(1)
 ######################################
